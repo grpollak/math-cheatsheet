@@ -20,15 +20,21 @@
 
 % Document class
 % ------------------------------------------------------------------------------
-\documentclass[fourColumns]{formularyETH/formularyETH}
+\documentclass[
+fourColumns,
+landscape
+]{formularyETH/formularyETH}
 % formuaryETH packages
 % ------------------------------------------------------------------------------
 \usepackage{formularyETH/formularyETH_GeneralPackages}
+\usepackage{formularyETH/formularyETH_theorems}
+\usepackage{formularyETH/formularyETH_items}
 \usepackage{formularyETH/formularyETH_underline}
 \usepackage{formularyETH/extern/formularyETH_scientific}
 \usepackage{formularyETH/extern/formularyETH_tikz}
-%\usepackage{formularyETH/extern/formularyETH_coding}
+\usepackage{formularyETH/extern/formularyETH_coding}
 \usepackage{formularyETH/extern/formularyETH_algorithms}
+\usepackage{math_submodule/formularyMacros}
 \usepackage{formularyMacros}
 % -----------------------------math Formulary----------------------------------- 
 % if git@gitlab.vis.ethz.ch:formularies/math.git is used as submodule
@@ -38,12 +44,12 @@
 % Other very usefull packages
 % ------------------------------------------------------------------------------
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
-\usepackage[skip=0pt]{caption}
+\usepackage[skip=0pt]{subcaption}
 \usepackage{wrapfig}
-\usepackage{subcaption}
 \usepackage{tabularx}
 % In order to use inkscape figures with transparent fillings using alpha
 \usepackage{transparent}
+\usepackage{standalone}
 % -----------------------------Minted------------------------------------------- 
 % minted uncomment next two lines
 % ------------------------------------------------------------------------------ 
@@ -69,16 +75,16 @@
 % Document begin
 % ==============================================================================
 \begin{document}
-	\input{math_submodule/math.tex}         
+  \input{math_submodule/math.tex}
+
 % ======================================================================
 % Todo
 % ======================================================================
 % \input{src/General_TODO.tex}
-  
+\end{document}
 % ==============================================================================
 % Document end
 % ==============================================================================
-\end{document}
 
 
 
