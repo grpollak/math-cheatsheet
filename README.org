@@ -1,2 +1,2 @@
-* This is my placeholder formulary
-** Further Information 
+* This is my math cheat-sheet
+** It contains and not so basic math and can be used in other cheat-sheets in order to reference math equations.
